@@ -20,10 +20,11 @@ service sshd restart
 ```
 6. 在CMD中ssh name@x.x.x.x (name为服务器登录名），如果没有提示输入密码，则配置成功
 
-##以上操作都完成后还是不行可以尝试修改文件权限如下##
+## 以上操作都完成后还是不行可以尝试修改文件权限如下 ##
 
 ```
 sudo chmod 600 authorized_keys
 sudo chmod 700 ~/.ssh
 ```
+
 7. 如果在保证配置免密成功的前提下，希望关闭密码登录，可以修改/etc/ssh/sshd_config：PasswordAuthentication no （ 谨慎操作，免密登录配置失败的话就和服务器说再见了。。）再重启sshd服务
