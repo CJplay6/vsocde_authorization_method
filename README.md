@@ -21,6 +21,7 @@ service sshd restart
 6. 在CMD中ssh name@x.x.x.x (name为服务器登录名），如果没有提示输入密码，则配置成功
 
 ##以上操作都完成后还是不行可以尝试修改文件权限如下##
+
 ```
 sudo chmod 600 authorized_keys
 sudo chmod 700 ~/.ssh
